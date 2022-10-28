@@ -6,6 +6,11 @@ const Nav = styled.div`
   justify-content: space-between;
   padding: 1rem 2rem;
   background-color: ${({ theme }) => theme.colors.navbar};
+  @media (max-width: ${({ theme }) => theme.responsive.sm}) {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
 `;
 
 export const HomeLogo = styled.img`
@@ -18,6 +23,11 @@ export const NavLinks = styled.ul`
   list-style-type: none;
   align-items: center;
   gap: 2rem;
+  @media (max-width: ${({ theme }) => theme.responsive.xsm}) {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
 `;
 
 export const NLink = styled(Link)`
@@ -25,6 +35,9 @@ export const NLink = styled(Link)`
   color: white;
   font-weight: 800;
   font-size: 1.2rem;
+  @media (max-width: ${({ theme }) => theme.responsive.md}) {
+    font-size: 1rem;
+  }
 `;
 
 export default Nav;

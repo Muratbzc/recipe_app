@@ -6,10 +6,26 @@ const StyledCard = styled.div`
   justify-content: center;
   gap: 2rem;
   padding: 2rem 4rem;
+  @media (max-width: ${({ theme }) => theme.responsive.lg}) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @media (max-width: ${({ theme }) => theme.responsive.md}) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: ${({ theme }) => theme.responsive.sm}) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: ${({ theme }) => theme.responsive.xsm}) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 export const FoodCard = styled.div`
   background-color: ${({ theme }) => theme.colors.navbar};
   border: 1px solid white;
+  padding: 1rem;
+  &:hover {
+    transform: scale(1.1);
+  }
 `;
 
 export const Texth3 = styled.h3`
@@ -21,7 +37,12 @@ export const Image = styled.img`
 `;
 export const CardButton = styled.button`
   background-color: ${({ theme }) => theme.colors.body};
-  border: 1px solid white;
+  border-color: white;
+  padding: 7px;
+  cursor: pointer;
+  &:active {
+    transform: scale(0.9);
+  }
 `;
 
 export default StyledCard;

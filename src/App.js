@@ -13,7 +13,7 @@ function App() {
       footer: "rgb(255, 174, 109)",
     },
     margins: {},
-    responsive: "724px",
+    responsive: { lg: "1150px", md: "900px", sm: "670px", xsm: "450px" },
   };
   return (
     <ThemeProvider theme={style}>
