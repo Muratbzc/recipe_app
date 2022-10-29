@@ -36,7 +36,8 @@ export const Image = styled.img`
   padding: 2rem;
 `;
 export const CardButton = styled.button`
-  background-color: ${({ theme }) => theme.colors.body};
+  color: ${({ theme }) => theme.colors.body};
+  background-color: #782701;
   border-color: white;
   padding: 7px;
   cursor: pointer;

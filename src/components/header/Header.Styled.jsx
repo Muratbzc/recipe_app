@@ -28,6 +28,7 @@ export const Button = styled.button`
   background-color: ${({ theme }) => theme.colors.navbar};
   border-color: white;
   font-size: 1rem;
+  color: #782701;
   &:active {
     transform: scale(0.9);
   }
@@ -41,5 +42,10 @@ export const Select = styled.select`
   @media (max-width: ${({ theme }) => theme.responsive.xsm}) {
     order: 2;
   }
+`;
+
+export const BackgroundImg = styled.img`
+  margin-top: 2rem;
+  width: 80vw;
 `;
 export default StyledHeader;

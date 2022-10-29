@@ -2,12 +2,14 @@ import axios from "axios";
 import { useState } from "react";
 import Card from "../card/Card";
 import StyledHeader, {
+  BackgroundImg,
   Button,
   Form,
   Input,
   Select,
   Texth1,
 } from "./Header.Styled";
+import BImg from "../../assets/3.jpg";
 
 const Header = () => {
   const [recipe, setRecipe] = useState("");
@@ -31,6 +33,7 @@ const Header = () => {
     console.log(quary, meal);
     getRecipeFromApi();
     setQuary("");
+    setMeal("");
   };
   const handleQuary = (e) => {
     setQuary(e.target.value);
@@ -53,7 +56,7 @@ const Header = () => {
         />
         <Button type="submit">Search</Button>
         <Select name="meal" id="meal" onChange={handleMeal}>
-          <option disabled value="">
+          <option disabled value="Select The Meal">
             Select The Meal
           </option>
 
@@ -64,7 +67,11 @@ const Header = () => {
           <option value="teatime">Teatime</option>
         </Select>
       </Form>
-      {recipe.length > 0 && <Card recipe={recipe} />}
+      {recipe.length > 0 ? (
+        <Card recipe={recipe} />
+      ) : (
+        <BackgroundImg src={BImg} />
+      )}
     </StyledHeader>
   );
 };

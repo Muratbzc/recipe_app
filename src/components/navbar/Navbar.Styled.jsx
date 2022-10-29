@@ -32,7 +32,7 @@ export const NavLinks = styled.ul`
 
 export const NLink = styled(Link)`
   text-decoration: none;
-  color: white;
+  color: #782701;
   font-weight: 800;
   font-size: 1.2rem;
   @media (max-width: ${({ theme }) => theme.responsive.md}) {

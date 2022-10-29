@@ -1,7 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import StyledCard, { CardButton, FoodCard, Image, Texth3 } from "./Card.Styled";
 
 const Card = ({ recipe }) => {
+  const navigate = useNavigate();
   return (
     <StyledCard>
       {recipe.map((item, index) => {
@@ -11,7 +13,9 @@ const Card = ({ recipe }) => {
             <Texth3>{recipe?.label}</Texth3>
             <Image src={recipe?.images?.THUMBNAIL?.url} alt="" />
             <br />
-            <CardButton>View More</CardButton>
+            <CardButton onClick={() => navigate(`/details`, { state: item })}>
+              View More
+            </CardButton>
           </FoodCard>
         );
       })}
