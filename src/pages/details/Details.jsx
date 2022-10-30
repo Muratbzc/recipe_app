@@ -39,8 +39,8 @@ const Details = () => {
         </ItemDiv>
         <ItemDiv>
           <ListRecipe>
-            {recipe.ingredients.map((ing) => {
-              return <ListLi>- {ing.text}</ListLi>;
+            {recipe.ingredients.map((ing, index) => {
+              return <ListLi key={index}>- {ing.text}</ListLi>;
             })}
           </ListRecipe>
         </ItemDiv>
