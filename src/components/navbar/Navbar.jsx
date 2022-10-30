@@ -1,5 +1,4 @@
 import React from "react";
-// import { Link } from "react-router-dom";
 import Logo from "../../assets/logo1.png";
 import Nav, { HomeLogo, NavLinks, NLink } from "./Navbar.Styled";
 
@@ -9,16 +8,16 @@ const Navbar = () => {
       <HomeLogo src={Logo} alt="logo" />
       <NavLinks>
         <li>
-          <NLink to="/">HOME</NLink>
+          <NLink to="/home">HOME</NLink>
         </li>
         <li>
           <NLink to="/about">ABOUT</NLink>
         </li>
         <li>
-          <NLink to="/github">CONTACT</NLink>
+          <NLink to="/contact">CONTACT</NLink>
         </li>
         <li>
-          <NLink to="/login">LOGOUT</NLink>
+          <NLink to="/">LOGOUT</NLink>
         </li>
       </NavLinks>
     </Nav>

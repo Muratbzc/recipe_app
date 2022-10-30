@@ -1,10 +1,12 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
+import Navbar from "../../components/navbar/Navbar";
 import StyledDetails, {
   DetailsHedar,
   ImageDeteails,
   ItemDiv,
   ListLi,
+  ListRecipe,
   ListUl,
 } from "./Details.Styled";
 
@@ -14,15 +16,15 @@ const Details = () => {
   const { recipe } = item;
   return (
     <div>
+      <Navbar />
       <DetailsHedar>
-        <h1>{recipe.label}</h1>
+        <h2>{recipe.label}</h2>
       </DetailsHedar>
       <StyledDetails>
         <ItemDiv>
           <ListUl>
-            <ListLi>-Nutrients-</ListLi>
             <ListLi>calories: {Number(recipe.calories).toFixed(2)}</ListLi>
-            {recipe.digest.slice(0, 8).map((nut, index) => {
+            {recipe.digest.slice(0, 9).map((nut, index) => {
               const { label, total } = nut;
               return (
                 <ListLi key={index}>
@@ -36,11 +38,11 @@ const Details = () => {
           <ImageDeteails src={recipe.images.REGULAR.url} alt="" />
         </ItemDiv>
         <ItemDiv>
-          <ListUl>
+          <ListRecipe>
             {recipe.ingredients.map((ing) => {
               return <ListLi>- {ing.text}</ListLi>;
             })}
-          </ListUl>
+          </ListRecipe>
         </ItemDiv>
       </StyledDetails>
     </div>

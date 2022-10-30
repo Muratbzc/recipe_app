@@ -9,7 +9,7 @@ import StyledHeader, {
   Select,
   Texth1,
 } from "./Header.Styled";
-import BImg from "../../assets/3.jpg";
+import BImg from "../../assets/2.jpg";
 
 const Header = () => {
   const [recipe, setRecipe] = useState("");

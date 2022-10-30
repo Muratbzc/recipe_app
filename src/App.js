@@ -1,9 +1,7 @@
-import { Route, Routes } from "react-router-dom";
+import React from "react";
 import { ThemeProvider } from "styled-components";
-import Navbar from "./components/navbar/Navbar";
-import Home from "./pages/home/Home";
 import { GlobalStyles } from "./components/GlobalStyles";
-import Details from "./pages/details/Details";
+import GlobalRouter from "./router/GlobalRouter";
 
 function App() {
   const style = {
@@ -12,7 +10,9 @@ function App() {
       header: "rgb(254, 205, 112)",
       body: "rgb(247, 245, 242)",
       var1: "#782701",
-      var2: " rgb(133, 8, 182)",
+      var2: " rgb(236, 197, 251)",
+      var3: " rgb(240, 255, 194)",
+      var4: " rgb(255, 187, 187)",
     },
     margins: {},
     responsive: { lg: "1150px", md: "900px", sm: "670px", xsm: "450px" },
@@ -20,11 +20,7 @@ function App() {
   return (
     <ThemeProvider theme={style}>
       <GlobalStyles />
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/details" element={<Details />} />
-      </Routes>
+      <GlobalRouter />
     </ThemeProvider>
   );
 }

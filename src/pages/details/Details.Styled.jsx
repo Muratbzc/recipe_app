@@ -11,6 +11,10 @@ const StyledDetails = styled.div`
   border: 2px solid white;
   outline-offset: 1rem;
   margin: 1rem;
+  @media (max-width: ${({ theme }) => theme.responsive.md}) {
+    padding: 1rem;
+    outline-offset: 0.5rem;
+  }
   @media (max-width: ${({ theme }) => theme.responsive.sm}) {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -23,20 +27,40 @@ export const DetailsHedar = styled.div`
 
 export const ListUl = styled.ul`
   border: 2px solid white;
-  padding: 1rem;
+  padding: 2rem;
   list-style-type: none;
+  @media (max-width: ${({ theme }) => theme.responsive.md}) {
+    padding: 1rem;
+  }
+  @media (max-width: ${({ theme }) => theme.responsive.sm}) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 14px;
+    gap: 0 2rem;
+  }
+  @media (max-width: ${({ theme }) => theme.responsive.xsm}) {
+    font-size: 11px;
+    gap: 0 1rem;
+    padding: 0.5rem;
+  }
+`;
+export const ListRecipe = styled(ListUl)`
+  @media (max-width: ${({ theme }) => theme.responsive.sm}) {
+    display: block;
+    font-size: 14px;
+  }
 `;
 export const ListLi = styled.li`
   margin-bottom: 0.7rem;
+  @media (max-width: ${({ theme }) => theme.responsive.sm}) {
+    margin-bottom: 0.4rem;
+  }
 `;
 export const ImageDeteails = styled.img`
   border: 2px solid white;
   border-radius: 10px;
   @media (max-width: ${({ theme }) => theme.responsive.md}) {
     width: 200px;
-  }
-  @media (max-width: ${({ theme }) => theme.responsive.sm}) {
-    order: 1;
   }
 `;
 
