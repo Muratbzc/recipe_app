@@ -45,8 +45,7 @@ export const Select = styled.select`
 `;
 
 export const BackgroundImg = styled.img`
-  margin-top: 2rem;
-  width: 80vw;
-  height: 700px;
+  margin-top: 3rem;
+  width: 15rem;
 `;
 export default StyledHeader;

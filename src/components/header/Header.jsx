@@ -9,7 +9,7 @@ import StyledHeader, {
   Select,
   Texth1,
 } from "./Header.Styled";
-import BImg from "../../assets/2.jpg";
+import BImg from "../../assets/gif2.gif";
 
 const Header = () => {
   const [recipe, setRecipe] = useState("");
@@ -19,7 +19,6 @@ const Header = () => {
   const getRecipeFromApi = async () => {
     const APP_ID = "4fed4613";
     const APP_KEY = "c56550d2aec99c6b14beaf2a2e7bd1e6";
-    // const url = `https://api.edamam.com/api/recipes/v2?type=public&q=salad&app_id=${APP_ID}&app_key=${APP_KEY}&mealType=dinner`;
     const url = `https://api.edamam.com/api/recipes/v2?type=public&q=${quary}&app_id=${APP_ID}&app_key=${APP_KEY}&mealType=${meal}`;
 
     const res = await axios(url);
