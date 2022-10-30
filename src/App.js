@@ -13,8 +13,8 @@ function App() {
       var2: " rgb(236, 197, 251)",
       var3: " rgb(240, 255, 194)",
       var4: " rgb(255, 187, 187)",
+      var5: " #35424A",
     },
-    margins: {},
     responsive: { lg: "1150px", md: "900px", sm: "670px", xsm: "450px" },
   };
   return (

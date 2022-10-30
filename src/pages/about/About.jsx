@@ -5,10 +5,9 @@ import StyledAbout, {
   AboutTitle,
   StyledAboutCard,
 } from "./About.styled";
-import avatar from "../../assets/4.jpg";
-import avatar2 from "../../assets/5.jpg";
-import avatar3 from "../../assets/6.jpg";
-import prize from "../../assets/prize.jpeg";
+import avatar from "../../assets/ab1.jpg";
+import avatar2 from "../../assets/ab2.jpg";
+import prize from "../../assets/ab3.jpeg";
 
 const About = () => {
   return (

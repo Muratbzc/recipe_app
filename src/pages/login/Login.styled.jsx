@@ -14,7 +14,7 @@ export const LoginSectionCard = styled.div`
   padding: 3rem 1.5rem;
   background-color: white;
   opacity: 0.9;
-  width: 300px;
+  width: 350px;
   margin: 5rem auto;
   border-radius: 10px;
   @media (max-width: ${({ theme }) => theme.responsive.md}) {
@@ -37,9 +37,10 @@ export const LoginImg = styled.img`
     width: 100px;
   }
 `;
-export const Loginh = styled.h1`
+export const Loginh = styled.h2`
   margin-bottom: 3rem;
   color: ${({ theme }) => theme.colors.var1};
+  text-align: center;
   @media (max-width: ${({ theme }) => theme.responsive.md}) {
     font-size: 1.5rem;
   }
