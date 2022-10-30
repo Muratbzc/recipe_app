@@ -14,7 +14,7 @@ export const StyledAboutCard = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 200px;
+  width: 250px;
   border: 5px solid black;
 `;
 
@@ -24,7 +24,7 @@ export const AboutImg = styled.img`
   border-radius: 30px;
   margin-top: 1rem;
 `;
-export const AboutTitle = styled.h2`
+export const AboutTitle = styled.h5`
   text-align: center;
 `;
 export const AboutText = styled.p`

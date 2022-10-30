@@ -1,9 +1,5 @@
 import Navbar from "../../components/navbar/Navbar";
-import StyledContact, {
-  ContactText,
-  Icons,
-  IconsSection,
-} from "./Contact.styled";
+import StyledContact, { Icons, IconsSection } from "./Contact.styled";
 import { FaGithub, FaLinkedin, FaInstagramSquare } from "react-icons/fa";
 
 const Contact = () => {
@@ -58,7 +54,7 @@ const Contact = () => {
 
       <StyledContact>
         <IconsSection>
-          <Icons>
+          <Icons href="https://github.com/Muratbzc" target="_blank">
             <FaGithub />
           </Icons>
           <Icons>

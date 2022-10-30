@@ -28,9 +28,10 @@ export const FoodCard = styled.div`
   }
 `;
 
-export const Texth3 = styled.h3`
+export const Texth3 = styled.h5`
   padding: 1rem;
-  height: 2rem;
+  height: 3.5rem;
+  font-size: 1rem;
 `;
 export const Image = styled.img`
   padding: 2rem;

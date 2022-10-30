@@ -5,11 +5,6 @@ const StyledContact = styled.div`
   margin-top: 5rem;
 `;
 
-export const ContactText = styled.h2`
-  color: white;
-  text-align: center;
-  padding: 3rem;
-`;
 export const IconsSection = styled.div`
   display: flex;
   justify-content: space-around;

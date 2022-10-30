@@ -26,7 +26,7 @@ export const NavLinks = styled.ul`
   @media (max-width: ${({ theme }) => theme.responsive.xsm}) {
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 10px 0;
   }
 `;
 

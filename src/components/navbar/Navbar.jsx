@@ -5,7 +5,9 @@ import Nav, { HomeLogo, NavLinks, NLink } from "./Navbar.Styled";
 const Navbar = () => {
   return (
     <Nav>
-      <HomeLogo src={Logo} alt="logo" />
+      <div>
+        <HomeLogo src={Logo} alt="logo" />
+      </div>
       <NavLinks>
         <li>
           <NLink to="/home">HOME</NLink>
