@@ -3,31 +3,48 @@ import { Link } from "react-router-dom";
 
 const Nav = styled.div`
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  flex-wrap: wrap;
+  padding: 1rem 3rem;
+  gap: 1rem 0;
   background-color: ${({ theme }) => theme.colors.navbar};
   @media (max-width: ${({ theme }) => theme.responsive.sm}) {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    padding: 1rem 2rem;
   }
 `;
 
 export const HomeLogo = styled.img`
   width: 120px;
   height: 70px;
+  @media (max-width: ${({ theme }) => theme.responsive.xsm}) {
+    width: 110px;
+    height: 60px;
+  }
 `;
 
-export const NavLinks = styled.ul`
+export const Hamburger = styled.div`
+  display: none;
+  font-size: 2rem;
+  padding-left: 2rem;
+  @media (max-width: ${({ theme }) => theme.responsive.sm}) {
+    display: flex;
+    align-items: center;
+  }
+`;
+
+export const NavLinks = styled.div`
   display: flex;
-  list-style-type: none;
   align-items: center;
   gap: 2rem;
-  @media (max-width: ${({ theme }) => theme.responsive.xsm}) {
+  @media (max-width: ${({ theme }) => theme.responsive.sm}) {
     flex-direction: column;
-    align-items: center;
-    gap: 10px 0;
+    width: 100%;
+    align-items: start;
+    gap: 0.5rem;
   }
+  max-height: ${({ show }) => (show ? "200px" : "0")};
+  overflow: hidden;
 `;
 
 export const NLink = styled(Link)`
@@ -35,7 +52,12 @@ export const NLink = styled(Link)`
   color: #782701;
   font-weight: bold;
   font-size: 1.2rem;
-  @media (max-width: ${({ theme }) => theme.responsive.md}) {
+  @media (max-width: ${({ theme }) => theme.responsive.sm}) {
+    border-bottom: 2px solid white;
+    width: 8rem;
+  }
+  @media (max-width: ${({ theme }) => theme.responsive.xsm}) {
+    width: 100%;
     font-size: 1rem;
   }
 `;
