@@ -14,4 +14,4 @@ Our goal in this project is to create Build a Random User App using ReactJS.
   - Build a random user App using ReactJS.
   - Fetch new user on NEW USER button click.
 
-<button><a href="https://muratbzc.github.io/recipe_app/">Go To Web Site</a></button>
+<button><a href="legendary-recipes-app.netlify.app">Go To Web Site</a></button>
