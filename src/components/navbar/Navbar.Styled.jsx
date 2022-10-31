@@ -42,9 +42,9 @@ export const NavLinks = styled.div`
     width: 100%;
     align-items: start;
     gap: 0.5rem;
+    max-height: ${({ show }) => (show ? "200px" : "0")};
+    overflow: hidden;
   }
-  max-height: ${({ show }) => (show ? "200px" : "0")};
-  overflow: hidden;
 `;
 
 export const NLink = styled(Link)`
