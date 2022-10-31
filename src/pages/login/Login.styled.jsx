@@ -18,7 +18,7 @@ export const LoginSectionCard = styled.div`
   margin: 5rem auto;
   border-radius: 10px;
   @media (max-width: ${({ theme }) => theme.responsive.md}) {
-    width: 200px;
+    width: 250px;
   }
 `;
 export const LoginSection = styled.div`
