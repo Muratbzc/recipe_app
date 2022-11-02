@@ -26,6 +26,7 @@ export const FoodCard = styled.div`
   &:hover {
     transform: scale(1.1);
   }
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 `;
 
 export const Texth3 = styled.h5`

@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "../pages/home/Home";
 import Details from "../pages/details/Details";
 import Login from "../pages/login/Login";
@@ -7,7 +7,7 @@ import About from "../pages/about/About";
 
 const GlobalRouter = () => {
   return (
-    <>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/home" element={<Home />} />
@@ -16,7 +16,7 @@ const GlobalRouter = () => {
         <Route path="/details" element={<Details />} />
         {/* <Route path="/login" element={<Login />} /> */}
       </Routes>
-    </>
+    </BrowserRouter>
   );
 };
 
