@@ -57,7 +57,10 @@ const Contact = () => {
           <Icons href="https://github.com/Muratbzc" target="_blank">
             <FaGithub />
           </Icons>
-          <Icons>
+          <Icons
+            href="https://www.linkedin.com/in/murat-bezci-28256a255/"
+            target="_blank"
+          >
             <FaLinkedin />
           </Icons>
           <Icons>
